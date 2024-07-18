@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Торгпласт - Дренаж ЛАЙТРОК'
+  })
+  <body>
+    <style>
+      body {
+        background: url(../images/proba.png) center 0 no-repeat;
+        opacity: .6;
+      }
+    </style>
+
+    <div id="root" class="site">
+      <div class="site__inner">
+        <!-- header BEGIN -->
+        @@include('html/components/header.html', {
+          'el': 'site__header'
+        })
+        <!-- header END -->
+        <main role="main" class="site__main">
+          <!-- section-head BEGIN -->
+          <section class="section-head">
+            <div class="container container--size-fluid section-head__container">
+              <div class="row section-head__row">
+                <div class="row__col--5 section-head__col section-head__col--title">
+                  <h1 class="section-head__title">Спасибо за ваши контактные данные</h1>
+                </div>
+                <div class="row__col--4 section-head__col section-head__col--content">
+                  <div class="u-content section-head__text">
+                    <p>Наш менеджер свяжется с вами в течение 15 минут и поможет подобрать дренажную систему для вашего участка. Ниже вы можете ознакомиться с ценами.</p>
+                    <p>Мы ответственно относимся к сохранности данных наших клиентов и не передаем их третьим лицам.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- section-head END -->
+          <!-- section-price BEGIN -->
+          <section class="section-price">
+            <div class="container container--size-fluid section-price__container">
+              <header class="section-price__header">
+                <div class="row section-price__header-row">
+                  <div class="row__col--5 section-price__header-col section-price__header-col--main">
+                    <div class="section-price__header-main">
+                      <h2 class="color-accent section-price__header-title">Прайс на дренажную систему ЛАЙТРОК и комплектующие</h2>
+                      <div class="u-content section-price__header-text">
+                        <p>При заказе дренажной системы в больших объемах вы получаете персональную скидку на саму систему и на комплектующие.</p>
+                      </div>
+                      <div class="actual-price section-price__header-time">
+                        <div class="actual-price__inner">
+                          <svg class="u-icon actual-price__icon">
+                            <use xlink:href="images/icons/icons.svg#calendar"></use>
+                          </svg>
+                          <div class="actual-price__title">Цены актуальны на</div>
+                          <time class="actual-price__time" datetime="2023-03-14">14.03.2023</time>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row__col--4 section-price__header-col section-price__header-col--aside">
+                    <div class="u-excel-price u-excel-price--theme-gray section-price__header-excel-price">
+                      <div class="u-excel-price__inner">
+                        <div class="u-excel-price__header">
+                          <span class="u-badge u-badge--size-semi u-badge--theme-white u-excel-price__header-badge"><strong>Таблица Excel</strong></span>
+                        </div>
+                        <div class="u-excel-price__content">
+                          <a class="u-excel-price__link" href="https://docs.google.com/" target="_blank">Прайс на дренаж ЛАЙТРОК и комплектующие</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </header>
+              <div class="section-price__list">
+                <div class="section-price__card">
+                  <div class="section-price__card-header">
+                    <div class="section-price__card-header-content">
+                      <h4 class="section-price__card-header-title">Дренажная система ЛАЙТРОК</h4>
+                      <p class="section-price__card-header-subtitle">Стоимость указана в информационных целях и не является публичной офертой</p>
+                    </div>
+                    <p class="section-price__card-header-counter"></p>
+                  </div>
+                  <div class="u-table section-price__card-table">
+                    <table class="u-table__el">
+                      <colgroup>
+                        <col style="width: 460rem;">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th class="u-table__header" colspan="4">Характеристики</th>
+                          <th class="u-table__header" colspan="3">Цена зависит от объема заказа, руб/пог.м</th>
+                        </tr>
+                        <tr class="u-table__head-line u-table__head-line--sticky">
+                          <th>Модель системы, 3 м</th>
+                          <th>Комплектация</th>
+                          <th>Диаметр трубы, мм</th>
+                          <th>Наруж.диаметр, мм</th>
+                          <th>От 0 до 100 пог.м</th>
+                          <th>От 151 до 500 пог.м</th>
+                          <th>От 501 пог.м и более</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="u-table__title">ЛАЙТРОК 300 PS</td>
+                          <td>Без колец и трубы</td>
+                          <td>–</td>
+                          <td>300</td>
+                          <td class="color-accent">863</td>
+                          <td class="color-accent">776</td>
+                          <td class="color-accent">690</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">ЛАЙТРОК 110 DSF (250)</td>
+                          <td>Без колец</td>
+                          <td>110</td>
+                          <td>250</td>
+                          <td class="color-accent">640</td>
+                          <td class="color-accent">580</td>
+                          <td class="color-accent">438</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">ЛАЙТРОК 110 DSF</td>
+                          <td>Без колец</td>
+                          <td>110</td>
+                          <td>300</td>
+                          <td class="color-accent">820</td>
+                          <td class="color-accent">740</td>
+                          <td class="color-accent">657</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">ЛАЙТРОК 110 DS</td>
+                          <td>С кольцами и трубой</td>
+                          <td>110</td>
+                          <td>300</td>
+                          <td class="color-accent">902</td>
+                          <td class="color-accent">814</td>
+                          <td class="color-accent">722</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">ЛАЙТРОК 160 DS</td>
+                          <td>С кольцами и трубой</td>
+                          <td>160</td>
+                          <td>400</td>
+                          <td class="color-accent">1 550</td>
+                          <td class="color-accent">1 400</td>
+                          <td class="color-accent">1 240</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">ЛАЙТРОК 200 DS</td>
+                          <td>С кольцами и трубой</td>
+                          <td>200</td>
+                          <td>500</td>
+                          <td class="color-accent">2 420</td>
+                          <td class="color-accent">2 170</td>
+                          <td class="color-accent">1 930</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div class="section-price__card">
+                  <div class="section-price__card-header">
+                    <div class="section-price__card-header-content">
+                      <h4 class="section-price__card-header-title">Комплектующие для дренажной системы</h4>
+                      <p class="section-price__card-header-subtitle">Стоимость указана в информационных целях и не является публичной офертой</p>
+                    </div>
+                    <p class="section-price__card-header-counter"></p>
+                  </div>
+                  <div class="u-table section-price__card-table">
+                    <table class="u-table__el">
+                      <colgroup>
+                        <col style="width: 460rem;">
+                        <col>
+                        <col>
+                        <col>
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th class="u-table__header"></th>
+                          <th class="u-table__header" colspan="3">Цена на комплектующие зависит от объема заказа, руб</th>
+                        </tr>
+                        <tr class="u-table__head-line u-table__head-line--sticky">
+                          <th>Наименование комплектующих</th>
+                          <th>От 0 до 100 пог.м</th>
+                          <th>От 151 до 500 пог.м</th>
+                          <th>От 501 пог.м и более</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="u-table__title">Заглушка наружная для дренажной трубы 110 мм</td>
+                          <td>105</td>
+                          <td>100</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Манжета резиновая для колодца диаметром 110 мм</td>
+                          <td>195</td>
+                          <td>175</td>
+                          <td>100</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Тройник для дренажных труб диаметром 110 мм</td>
+                          <td>300</td>
+                          <td>270</td>
+                          <td>240</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Муфта для дренажных труб диаметром 110 мм</td>
+                          <td>150</td>
+                          <td>135</td>
+                          <td>80</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Колодец смотровой d 315/276 с дном и крышей h = 1 м</td>
+                          <td>2 754</td>
+                          <td>2 470</td>
+                          <td>2 400</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Колодец смотровой d 315/276 с дном и крышей h = 1,5 м</td>
+                          <td>3 510</td>
+                          <td>3 160</td>
+                          <td>3 080</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Колодец смотровой d 315/276 с дном и крышей h = 2 м</td>
+                          <td>4 880</td>
+                          <td>4 390</td>
+                          <td>3 400</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Колодец смотровой d 315/276 с дном и крышей h = 3 м</td>
+                          <td>6 600</td>
+                          <td>5 940</td>
+                          <td>5 370</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Колодец смотровой d 315/276 с дном и крышей h = 4 м</td>
+                          <td>8 360</td>
+                          <td>7 520</td>
+                          <td>6 600</td>
+                        </tr>
+                        <tr>
+                          <td class="u-table__title">Колодец смотровой d 315/276 с дном и крышей h = 5 м</td>
+                          <td>9 600</td>
+                          <td>8 640</td>
+                          <td>8 100</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- section-price END -->
+        </main>
+        <!-- footer BEGIN -->
+        @@include('html/components/footer.html', {
+          'el': 'site__footer'
+        })
+        <!-- footer END -->
+      </div>
+      @@include('html/modal.html')
+    </div>
+
+    @@include('html/script.html')
+  </body>
+</html>

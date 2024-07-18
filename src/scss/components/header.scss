@@ -1,0 +1,96 @@
+.header {
+  font-weight: 600;
+  font-family: $ffAccent;
+  &__head {
+    padding: 16rem 0 3rem;
+    border-bottom: 1px solid rgba($steelGrayColor, .15);
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-left {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__logo {
+    margin-right: $rhythmDesktop7;
+    display: inline-flex;
+    align-items: center;
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+      @media (min-width: $lg-mf) {
+        opacity: .6;
+      }
+    }
+    &-img {
+      width: 230rem;
+      height: auto;
+      display: block;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+  &__choose-city {
+    margin-top: -7rem;
+  }
+  &__phone {
+    display: inline-block;
+    white-space: nowrap;
+    transition: $transition;
+    &:hover {
+      text-decoration: none;
+      @media (min-width: $lg-mf) {
+        color: $accentColor;
+      }
+    }
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      &:after {
+        background: rgba($steelGrayColor, .6);
+        width: 1px;
+        height: 20rem;
+        margin: 0 $rhythmDesktop6;
+        content: '';
+        display: block;
+        flex-shrink: 0;
+      }
+    }
+  }
+  &__basket {
+    flex-shrink: 0;
+  }
+  &__foot {
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-left {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__catalog {
+    position: relative;
+    top: 4rem;
+  }
+  &__nav {
+  }
+}

@@ -1,0 +1,105 @@
+.section-price {
+  padding: $rhythmDesktop1 0 $rhythmDesktop2;
+  position: relative;
+  &:before {
+    background: rgba($steelGrayColor, .6);
+    height: 1px;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: var(--gap-fluid);
+    left: var(--gap-fluid);
+  }
+  &__container {
+  }
+  &__header {
+    padding-bottom: 82rem;
+    &-row {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
+    &-col  {
+      &--main {
+      }
+      &--aside {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+      }
+    }
+    &-main {
+      > :last-child {
+        margin-bottom: 0;
+      }
+    }
+    &-title {
+      margin: 9rem -12rem 23rem 0;
+    }
+    &-text {
+      max-width: 750rem;
+      margin: 0 0 44rem;
+    }
+    &-time {
+      margin-left: 4rem;
+    }
+    &-excel-price {
+      max-width: 400rem;
+      margin-top: -1rem;
+    }
+  }
+  &__list {
+    counter-reset: sectionPriceCard;
+  }
+  &__card {
+    counter-increment: sectionPriceCard;
+    border-top: 1px solid rgba($steelGrayColor, .15);
+    &:not(:last-child) {
+      margin-bottom: 88rem;
+    }
+    &-header {
+      padding: $rhythmDesktop5 0 $rhythmDesktop3;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      &-content {
+        padding-right: 30rem;
+      }
+      &-title {
+        margin: 0  0$rhythmDesktop7;
+      }
+      &-subtitle {
+        margin: 0;
+        font-size: var(--fs-6);
+        line-height: $lineHeight8;
+        color: rgba($blackColor, .6);
+        letter-spacing: $letterSpacingXs;
+      }
+      &-counter {
+        margin: 0;
+        flex-shrink: 0;
+        font-weight: 600;
+        font-size: var(--fs-7);
+        color: rgba($blackColor, .6);
+        white-space: nowrap;
+        &:after {
+          content: counter(sectionPriceCard, decimal-leading-zero);
+        }
+      }
+    }
+    &-table {
+    }
+    &:last-child {
+      table {
+        tbody {
+          tr {
+            &:last-child {
+              td {
+                border-bottom-width: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
