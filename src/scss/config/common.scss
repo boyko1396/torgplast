@@ -490,9 +490,12 @@
     padding: 0;
   }
   &__img {
-    width: auto;
     height: 40rem;
-    display: block;
-    object-fit: contain;
+    img {
+      width: auto;
+      height: 100%;
+      display: block;
+      object-fit: contain;
+    }
   }
 }
