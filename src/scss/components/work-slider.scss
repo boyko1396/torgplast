@@ -1,0 +1,41 @@
+.work-slider {
+  .swiper-pagination {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__inner {
+    height: 100%;
+  }
+  &__slide {
+    height: 100%;
+  }
+  &__card {
+    height: 100%;
+    padding-bottom: 74.2857142857%;
+    position: relative;
+    &:not(:hover) {
+      .work-slider__btn-action {
+        @media (min-width: $lg-mf) {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  &__picture {
+    @extend %img-cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__btn-action {
+    position: absolute;
+    top: var(--vr-3);
+    right: var(--vr-3);
+  }
+}

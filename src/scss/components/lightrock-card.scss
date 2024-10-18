@@ -1,0 +1,27 @@
+.lightrock-card {
+  background: rgba($steelGrayColor, .1);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: $radiusSemi;
+  &__counter {
+    margin: 0 0 2.4rem;
+  }
+  &__title {
+    min-height: 3.45em;
+    margin: 0 0 2.4rem;
+    line-height: $lineHeight3;
+  }
+  &__picture {
+    @extend %img-contain;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 0 2.4rem;
+  }
+  &__content {
+    margin: auto 0 0;
+  }
+  &__text {
+    color: $coolGrayColor;
+  }
+}

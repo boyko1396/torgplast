@@ -1,5 +1,5 @@
 .section-price {
-  padding: $rhythmDesktop1 0 $rhythmDesktop2;
+  padding: var(--vr-1) 0 var(--vr-2);
   position: relative;
   &:before {
     background: rgba($steelGrayColor, .6);
@@ -13,7 +13,7 @@
   &__container {
   }
   &__header {
-    padding-bottom: 82rem;
+    padding-bottom: 8.2rem;
     &-row {
       justify-content: space-between;
       flex-wrap: nowrap;
@@ -33,18 +33,18 @@
       }
     }
     &-title {
-      margin: 9rem -12rem 23rem 0;
+      margin: .9rem -1.2rem 2.3rem 0;
     }
     &-text {
-      max-width: 750rem;
-      margin: 0 0 44rem;
+      max-width: 75rem;
+      margin: 0 0 4.4rem;
     }
     &-time {
-      margin-left: 4rem;
+      margin-left: .4rem;
     }
     &-excel-price {
-      max-width: 400rem;
-      margin-top: -1rem;
+      max-width: 40rem;
+      margin-top: -.1rem;
     }
   }
   &__list {
@@ -54,18 +54,18 @@
     counter-increment: sectionPriceCard;
     border-top: 1px solid rgba($steelGrayColor, .15);
     &:not(:last-child) {
-      margin-bottom: 88rem;
+      margin-bottom: 8.8rem;
     }
     &-header {
-      padding: $rhythmDesktop5 0 $rhythmDesktop3;
+      padding: var(--vr-5) 0 var(--vr-3);
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       &-content {
-        padding-right: 30rem;
+        padding-right: 3rem;
       }
       &-title {
-        margin: 0  0$rhythmDesktop7;
+        margin: 0 0 var(--vr-7);
       }
       &-subtitle {
         margin: 0;

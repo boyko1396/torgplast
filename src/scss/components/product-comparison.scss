@@ -1,0 +1,21 @@
+.product-comparison {
+  padding: var(--offset-section-2) 0 var(--offset-section-2);
+  position: relative;
+  &__container {
+  }
+  &__header {
+    margin-bottom: var(--offset-section-2);
+  }
+  &__table {
+    &-wrapper {
+      padding-bottom: 6rem;
+      position: relative;
+    }
+    &-saving {
+      font-size: var(--fs-6);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

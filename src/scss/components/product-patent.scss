@@ -1,0 +1,47 @@
+.product-patent {
+  padding: var(--offset-section-2) 0 var(--offset-section-4);
+  position: relative;
+  &__container {
+  }
+  &__main {
+  }
+  &__row {
+  }
+  &__col {
+    &--content {
+    }
+    &--main {
+    }
+  }
+  &__content {
+  }
+  &__title {
+    margin: 0 0 var(--title-section-2);
+  }
+  &__text {
+    max-width: 67rem;
+  }
+  &__main {
+  }
+  &__file {
+    padding: 8.4rem;
+    border: 1px solid $steelGrayColor;
+    border-radius: $radiusMd;
+    position: relative;
+    &-badge {
+      position: absolute;
+      top: 2.3rem;
+      left: 2.3rem;
+    }
+    &-picture {
+      max-width: 35rem;
+      margin: 0 auto;
+      display: block;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

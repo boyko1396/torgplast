@@ -11,13 +11,16 @@ const paths = {
 
 export const webpackConfig = (isMode) => {
   return {
-    entry: ['@babel/polyfill', path.join(paths.src, 'js/app.js')],
+    entry: {
+      drainage_system: path.join(paths.src, 'js/drainage_system.js'),
+      main_page: path.join(paths.src, 'js/main_page.js'),
+    },
 
     mode: isMode ? 'development' : 'production',
 
     output: {
       path: path.join(paths.build, 'js'),
-      filename: 'app.min.js',
+      filename: '[name].min.js', // генерує файли drainage_system.min.js, main_page.min.js
       publicPath: '/',
     },
 
@@ -26,16 +29,11 @@ export const webpackConfig = (isMode) => {
         {
           test: /\.m?js$/,
           exclude: /node_modules/,
-
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
             },
-          },
-
-          resolve: {
-            fullySpecified: false,
           },
         },
       ],

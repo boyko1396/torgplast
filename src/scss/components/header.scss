@@ -2,7 +2,7 @@
   font-weight: 600;
   font-family: $ffAccent;
   &__head {
-    padding: 16rem 0 3rem;
+    padding: 1.6rem 0 .3rem;
     border-bottom: 1px solid rgba($steelGrayColor, .15);
     &-container {
       display: flex;
@@ -20,7 +20,7 @@
     }
   }
   &__logo {
-    margin-right: $rhythmDesktop7;
+    margin-right: var(--vr-7);
     display: inline-flex;
     align-items: center;
     transition: $transition;
@@ -31,7 +31,7 @@
       }
     }
     &-img {
-      width: 230rem;
+      width: 23rem;
       height: auto;
       display: block;
       img {
@@ -42,7 +42,7 @@
     }
   }
   &__choose-city {
-    margin-top: -7rem;
+    margin-top: -.7rem;
   }
   &__phone {
     display: inline-block;
@@ -60,8 +60,8 @@
       &:after {
         background: rgba($steelGrayColor, .6);
         width: 1px;
-        height: 20rem;
-        margin: 0 $rhythmDesktop6;
+        height: 2rem;
+        margin: 0 var(--vr-6);
         content: '';
         display: block;
         flex-shrink: 0;
@@ -89,7 +89,7 @@
   }
   &__catalog {
     position: relative;
-    top: 4rem;
+    top: .4rem;
   }
   &__nav {
   }

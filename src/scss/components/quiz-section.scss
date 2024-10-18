@@ -1,0 +1,17 @@
+.quiz-section {
+  padding: var(--offset-section-3) 0 var(--offset-section-3);
+  position: relative;
+  &__container {
+  }
+  &__title {
+    max-width: 80rem;
+    margin: 0 0 var(--title-section-1);
+  }
+  &__picture {
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

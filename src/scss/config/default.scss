@@ -8,7 +8,7 @@ html{-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size
 
 html {
   font-size: $siteResolution;
-  scroll-behavior: smooth;
+  scroll-behavior: unset;
 }
 
 html,
@@ -18,6 +18,7 @@ body {
 
 body {
   background: $bgSite;
+  background: url(../images/proba-1920.jpg) center top no-repeat;
   font-style: normal;
   font-weight: $mainWeight;
   font-size: var(--fs-default);
@@ -68,60 +69,59 @@ h3,
 h4,
 h5,
 h6,
-.title-size-1,
-.title-size-2,
-.title-size-3,
-.title-size-4,
-.title-size-5,
-.title-size-6 {
+.fs-1,
+.fs-2,
+.fs-3,
+.fs-4,
+.fs-5,
+.fs-6 {
   margin-top: 0;
   font-style: normal;
   font-weight: 600;
   font-family: $ffAccent;
   line-height: inherit;
-  letter-spacing: $letterSpacingDefault;
 }
 
 h1,
-.title-size-1,
-.font-size-1 {
+.fs-1 {
   font-size: var(--fs-1);
   line-height: $lineHeight1;
+  letter-spacing: $letterSpacingDefault;
 }
 
 h2,
-.title-size-2,
-.font-size-2 {
+.fs-2 {
   font-size: var(--fs-2);
-  line-height: $lineHeight1;
+  line-height: $lineHeight2;
+  letter-spacing: $letterSpacingDefault;
 }
 
 h3,
-.title-size-3,
-.font-size-3 {
+.fs-3 {
   font-size: var(--fs-3);
   line-height: $lineHeight3;
+  letter-spacing: $letterSpacingMd;
 }
 
 h4,
-.title-size-4,
-.font-size-4 {
+.fs-4 {
   font-size: var(--fs-4);
-  line-height: $lineHeight3;
+  line-height: $lineHeight9;
+  letter-spacing: $letterSpacingDefault;
 }
 
 h5,
-.title-size-5,
-.font-size-5 {
+.fs-5 {
   font-size: var(--fs-5);
   line-height: $lineHeight3;
+  letter-spacing: $letterSpacingMd;
 }
 
 h6,
-.title-size-6,
-.font-size-6 {
+.fs-6 {
   font-size: var(--fs-6);
   line-height: $lineHeight3;
+  letter-spacing: $letterSpacingMd;
 }
 
 p {
@@ -130,8 +130,8 @@ p {
 
 svg,
 .u-icon {
-  width: 24rem;
-  height: 24rem;
+  width: 2.4rem;
+  height: 2.4rem;
   display: inline-block;
   fill: currentColor;
   color: inherit;
@@ -167,5 +167,49 @@ svg,
   }
   &__footer {
     margin-top: auto;
+  }
+}
+
+.color {
+  &-grey {
+    color: $coolGrayColor !important;
+  }
+  &-black {
+    &-40 {
+      color: rgba($blackColor, .4) !important;
+    }
+    &-60 {
+      color: rgba($blackColor, .6) !important;
+    }
+  }
+  &-accent {
+    color: $accentColor !important;
+  }
+}
+
+.u-scrollbar {
+  --scroll-pad: 0;
+  --scroll-size: .6rem;
+  --scroll-bg: #DFDFE2;
+  --scroll-color: #{$accentColor};
+  &::-webkit-scrollbar {
+    background-color: var(--scroll-bg);
+    height: var(--scroll-size);
+    width: var(--scroll-size);
+    border-radius: 20rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: var(--scroll-color);
+    border-color: var(--scroll-bg);
+    border-style: solid;
+    border-width: var(--scroll-pad);
+    border-radius: 20rem;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: var(--scroll-bg)
+  }
+  &::-webkit-scrollbar-thumb:active, {
+    --scroll-pad: 0;
   }
 }

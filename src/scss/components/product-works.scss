@@ -1,0 +1,37 @@
+.product-works {
+  background: $lightLavenderColor;
+  padding: var(--offset-section-1) 0 var(--offset-section-1);
+  position: relative;
+  &__container {
+  }
+  &__header {
+    margin-bottom: var(--offset-section-2);
+  }
+  &__works {
+    &-card {
+      &:not(:last-child) {
+        margin-bottom: var(--vr-8);
+      }
+      .swiper-pagination {
+        @media (min-width: $lg-mf) {
+          transition: $transition;
+          transition-property: transform, opacity, visibility;
+        }
+      }
+      &:not(:hover) {
+        .swiper-pagination {
+          @media (min-width: $lg-mf) {
+            transform: translate(0, 7rem);
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+  &__works-btn-moore {
+    width: 100%;
+    margin-top: var(--vr-8);
+    display: block;
+  }
+}

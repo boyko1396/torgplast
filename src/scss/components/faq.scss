@@ -1,0 +1,35 @@
+.faq {
+  position: relative;
+  padding-top: var(--offset-section-1);
+  padding-bottom: var(--offset-section-1);
+  &__container {
+    > :not(:last-child) {
+      margin-bottom: var(--offset-section-4);
+    }
+  }
+  &__header {
+    margin-bottom: var(--vr-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__article-widget {
+  }
+  &__list {
+    counter-reset: productFeaturesCard;
+    &-card {
+      & {
+        counter-increment: productFeaturesCard;
+        border-bottom: 1px solid $steelGrayColorOpacity60;
+        &:not(:last-child) {
+        }
+      }
+      .thesis-item__title {
+        max-width: calc(50% + var(--grid-gap));
+      }
+      .thesis-item__text {
+        max-width: calc(42% + var(--grid-gap));
+      }
+    }
+  }
+}

@@ -14,10 +14,10 @@ const filePaths = {
     static: `${buildFolder}/static/`,
   },
   src: {
-    js: `${srcFolder}/js/app.js`,
+    js: `${srcFolder}/js/**/*.js`,
     images: `${srcFolder}/images/**/*.{jpg,jpeg,png,gif,webp}`,
     svg: `${srcFolder}/images/**/*.svg`,
-    scss: `${srcFolder}/scss/style.scss`,
+    scss: `${srcFolder}/scss/**/*.scss`,
     html: `${srcFolder}/*.html`,
     static: `${srcFolder}/static/**/*.*`,
     svgIcons: `${srcFolder}/images/icons/*.svg`,

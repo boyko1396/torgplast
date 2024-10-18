@@ -1,0 +1,56 @@
+@use 'sass:math';
+
+/** Local font inclusion from the "./src/fonts" folder */
+@import 'config/fonts';
+
+/** Variable inclusion */
+@import 'config/vars';
+
+/** Inclusion of sass functions, mixins, and style extends */
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/patternSelectors';
+
+/** Reset */
+@import 'config/default';
+
+/** Libraries */
+@import 'libs/swiper';
+
+/** Common parameters, templates, and utility classes */
+@import 'config/media';
+@import 'config/base';
+
+/** Common BEM blocks used throughout the project */
+@import 'components/lightrock-card';
+@import 'components/thesis-item';
+@import 'components/section-header';
+@import 'components/work-slider';
+@import 'components/work-card';
+@import 'components/fake-card';
+@import 'components/recommend-article';
+@import 'components/u-card';
+@import 'components/goods-slider';
+@import 'components/article-widget';
+@import 'components/faq';
+@import 'components/call-form';
+@import 'components/appeal-section';
+@import 'config/common';
+@import 'components/popup';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/product-intro';
+@import 'components/product-appeal';
+@import 'components/quiz-section';
+@import 'components/lightrock-section';
+@import 'components/product-patent';
+@import 'components/product-features';
+@import 'components/pressure-resistance';
+@import 'components/product-comparison';
+@import 'components/product-works';
+@import 'components/product-video';
+@import 'components/product-fake';
+@import 'components/product-recommend-article';
+@import 'components/goods-section';
+
+/** Inclusion of styles for individual blocks and sections */

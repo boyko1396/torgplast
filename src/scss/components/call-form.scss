@@ -1,0 +1,17 @@
+.call-form {
+  &__input {
+    margin: 0 0 var(--vr-4);
+  }
+  &__footer {
+    margin: var(--vr-12) 0 0;
+    display: flex;
+    align-items: center;
+    &-btn {
+      margin-right: 1.6rem;
+      flex-shrink: 0;
+    }
+    &-privacy {
+      max-width: 32rem;
+    }
+  }
+}

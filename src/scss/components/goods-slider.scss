@@ -1,0 +1,12 @@
+.goods-slider {
+  &__inner {
+    margin: 0 -1.2rem;
+    overflow: visible;
+  }
+  &__slide {
+    height: initial;
+    padding: 0 1.2rem;
+  }
+  &__card {
+  }
+}

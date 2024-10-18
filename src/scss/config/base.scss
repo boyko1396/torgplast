@@ -3,22 +3,23 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 var(--gap-2);
+  padding: 0 var(--gap-container);
   &--size {
     &-fluid {
       max-width: $containerWidthFluid;
+      padding: 0;
     }
   }
 }
 
 .row {
-  margin: 0 var(--gap-);
+  margin: 0 var(--grid-gap-);
   display: flex;
   flex-wrap: wrap;
   &__col {
     max-width: 100%;
     min-height: 1rem;
-    padding: 0 var(--gap);
+    padding: 0 var(--grid-gap);
     flex-shrink: 0;
     @for $i from 1 through 12 {
       &--#{$i} {

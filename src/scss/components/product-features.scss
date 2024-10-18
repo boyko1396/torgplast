@@ -1,0 +1,44 @@
+.product-features {
+  padding: var(--offset-section-1) 0 var(--offset-section-2);
+  position: relative;
+  &__container {
+  }
+  &__main {
+  }
+  &__row {
+  }
+  &__col {
+    &--position {
+      &-sticky {
+        align-self: flex-start;
+        position: sticky;
+        top: 0;
+      }
+    }
+    &--content {
+    }
+    &--main {
+    }
+  }
+  &__content {
+  }
+  &__title {
+    max-width: 70rem;
+    margin: 0 0 var(--title-section-2);
+  }
+  &__text {
+    max-width: 60rem;
+  }
+  &__benefits {
+    counter-reset: productFeaturesCard;
+    &-item {
+      counter-increment: productFeaturesCard;
+      &:first-child {
+        border-top: 1px solid rgba($steelGrayColor, .6);
+      }
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba($steelGrayColor, .6);
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .footer {
   background: $blackColor;
-  padding: $rhythmDesktop2 0 37rem;
+  padding: var(--vr-2) 0 3.7rem;
   font-size: var(--fs-6);
   color: $lightGrayColor;
   position: relative;
@@ -13,25 +13,25 @@
       margin-right: $colWidth;
     }
     &--nav-product {
-      margin-top: 9rem;
+      margin-top: .9rem;
     }
     &--nav-info {
-      margin-top: 9rem;
+      margin-top: .9rem;
     }
     &--contacts {
-      margin-top: 9rem;
+      margin-top: .9rem;
     }
     &--development {
-      margin-top: 29rem;
+      margin-top: 2.9rem;
       align-self: center;
     }
     &--payments {
-      margin-top: 29rem;
+      margin-top: 2.9rem;
       align-self: center;
     }
   }
   &__logo {
-    margin: 0 0 $rhythmDesktop5;
+    margin: 0 0 var(--vr-5);
     display: inline-flex;
     align-items: center;
     transition: $transition;
@@ -42,7 +42,7 @@
       }
     }
     &-img {
-      width: 313rem;
+      width: 31.3rem;
       height: auto;
       display: block;
       img {
@@ -54,7 +54,7 @@
   }
   &__description {
     @extend .font-type-8;
-    margin: 0 16rem $rhythmDesktop6 0;
+    margin: 0 1.6rem var(--vr-6) 0;
   }
   &__copyright {
     @extend .font-type-8;
@@ -62,11 +62,11 @@
   }
   &__privacy-text {
     @extend .font-type-8;
-    margin: 0 0 $rhythmDesktop5;
+    margin: 0 0 var(--vr-5);
     color: $coolGrayColor;
   }
   &__privacy {
-    margin: 0 0 $rhythmDesktop7;
+    margin: 0 0 var(--vr-7);
     font-size: var(--fs-5);
     font-family: $ffAccent;
     color: $coolGrayColor;
@@ -98,15 +98,11 @@
       padding: 0;
       letter-spacing: inherit;
       &:not(:last-child) {
-        margin-bottom: 15rem;
+        margin-bottom: 1.5rem;
       }
     }
     &-link {
-      @extend .font-type-6;
-      font-weight: 600;
-      font-family: $ffAccent;
-      line-height: $lineHeight7;
-      color: rgba($lightGrayColor, .7);
+      color: $coolGrayColor;
       letter-spacing: inherit;
       transition: $transition;
       &:hover {
@@ -118,8 +114,8 @@
     }
   }
   &__link-title {
-    @extend .font-type-6;
-    margin: 0 0 6rem;
+    @extend .fs-5;
+    margin: 0 0 .6rem;
     display: inline-block;
     transition: $transition;
     &:hover {
@@ -130,16 +126,16 @@
     }
   }
   &__choose-city {
-    margin: 21rem 0 13rem;
+    margin: 2.1rem 0 1.3rem;
   }
   &__address {
     @extend .font-type-8;
-    margin: 0 0 31rem;
+    margin: 0 0 3.1rem;
     color: $coolGrayColor;
   }
   &__contacts-list {
-    margin: 0 -24rem -12rem 0;
-    padding: 0 0 $rhythmDesktop8;
+    margin: 0 -2.4rem -1.2rem 0;
+    padding: 0 0 var(--vr-8);
     display: flex;
     list-style-type: none;
     font-weight: 600;
@@ -147,7 +143,7 @@
     font-family: $ffAccent;
     flex-wrap: wrap;
     li {
-      margin: 0 24rem 12rem 0;
+      margin: 0 2.4rem 1.2rem 0;
       padding: 0;
     }
     a {
@@ -165,8 +161,9 @@
   &__development {
     @extend .font-type-8;
     margin: 0;
-    display: inline-flex;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     position: relative;
     white-space: nowrap;
     &-link {
@@ -181,9 +178,12 @@
       }
     }
     &-logo {
-      max-width: 74rem;
-      margin-left: 8rem;
-      flex: 0 0 74rem;
+      width: 7.4rem;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
   }
 }

@@ -23,7 +23,7 @@ const scss = () => {
 
   return (
     gulp
-      .src(filePaths.src.scss, { sourcemaps: isDev })
+      .src(['src/scss/main.scss', 'src/scss/drainage_system.scss'], { sourcemaps: isDev })
       .pipe(plugins.handleError('SCSS'))
 
       .pipe(sass({ outputStyle: 'expanded' }))

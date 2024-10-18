@@ -1,0 +1,42 @@
+.work-card {
+  &__inner {
+  }
+  &__row {
+  }
+  &__col {
+    &--media {
+    }
+  }
+  &__media {
+    height: 100%;
+    border-radius: $radiusSm2;
+    position: relative;
+    overflow: hidden;
+  }
+  &__slider {
+    height: 100%;
+  }
+  &__main {
+    background: $blackDarkColor;
+    height: 100%;
+    padding: var(--vr-3);
+    display: flex;
+    flex-direction: column;
+    color: $lightGrayColor;
+    border-radius: $radiusSm2;
+    &-header {
+    }
+    &-title {
+    }
+    &-footer {
+      margin-top: auto;
+      padding-top: var(--vr-3);
+    }
+    &-descriptor {
+      margin: 0 0 var(--vr-3);
+    }
+    &-file-card {
+      width: 100%;
+    }
+  }
+}

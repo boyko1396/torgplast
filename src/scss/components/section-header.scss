@@ -1,0 +1,29 @@
+.section-header {
+  &__row {
+  }
+  &__col {
+    &--footnote {
+      margin: 0 0 2.4rem;
+    }
+    &--title {
+    }
+    &--aside {
+    }
+  }
+  &__footnote {
+    margin: 0;
+    &-wrapper {
+    }
+  }
+  &__title {
+    margin: 0;
+    &-wrapper {
+    }
+  }
+  &__description {
+    max-width: 66.5rem;
+    margin: 0;
+    &-wrapper {
+    }
+  }
+}

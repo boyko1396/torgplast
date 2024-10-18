@@ -1,5 +1,5 @@
 .section-head {
-  padding: $rhythmDesktop1 0 $rhythmDesktop2;
+  padding: var(--vr-1) 0 var(--vr-2);
   &__container {
   }
   &__row {
@@ -13,9 +13,9 @@
     }
   }
   &__title {
-    margin: 12rem 0 0;
+    margin: 1.2rem 0 0;
   }
   &__text {
-    margin: 31rem 0 0;
+    margin: 3.2rem 0 0;
   }
 }

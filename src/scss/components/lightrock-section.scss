@@ -1,0 +1,29 @@
+.lightrock-section {
+  padding: var(--offset-section-3) 0 var(--offset-section-2);
+  position: relative;
+  &__container {
+  }
+  &__title {
+    margin: 0 0 var(--title-section-1);
+  }
+  &__list {
+    &-row {
+      margin-bottom: var(--grid-gap-);
+    }
+    &-col {
+      margin-bottom: var(--grid-gap);
+    }
+    &-card {
+      height: 100%;
+    }
+  }
+  &__hero {
+    width: 100%;
+    margin-top: var(--offset-section-1);
+    img {
+      width: 114vw;
+      height: auto;
+      display: block;
+    }
+  }
+}

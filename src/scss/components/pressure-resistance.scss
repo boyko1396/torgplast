@@ -1,0 +1,100 @@
+.pressure-resistance {
+  padding: var(--offset-section-2) 0 var(--offset-section-2);
+  position: relative;
+  &__main {
+    background: $blackColor;
+    margin: 0 2.4rem;
+    padding: var(--offset-section-7) 5rem 30rem;
+    color: $whiteColor;
+    border-radius: $radiusSm2 $radiusSm2 0 0;
+    &-container {
+    }
+  }
+  &__row {
+  }
+  &__col {
+    &--content {
+    }
+    &--media {
+    }
+    &--about-title {
+      margin-bottom: var(--vr-4);
+      align-self: center;
+    }
+    &--about-description {
+      margin-bottom: var(--vr-4);
+      align-self: center;
+    }
+    &--about-list {
+    }
+    &--about-file {
+    }
+  }
+  &__content {
+  }
+  &__title {
+    margin: 0 0 var(--vr-4);
+  }
+  &__text {
+    max-width: 58rem;
+    color: $coolGrayColor;
+  }
+  &__media {
+    margin-top: var(--offset-section-7-);
+  }
+  &__whale {
+    margin: 0 0 0 -46%;
+    pointer-events: none;
+    user-select: none;
+    img {
+      width: 100%;
+      max-width: 111.6rem;
+      height: auto;
+      margin-left: auto;
+      display: block;
+    }
+  }
+  &__about {
+    background: $lightLavenderColor;
+    margin: -32rem 5rem -10rem;
+    padding: 12rem 10rem;
+    border-radius: $radiusSm2;
+    position: relative;
+    &-container {
+    }
+    &-title {
+    }
+    &-description {
+      max-width: 60rem;
+    }
+    &-list {
+    }
+    &-card {
+      width: 100%;
+      max-width: 20rem;
+      font-size: var(--fs-6);
+      line-height: $lineHeight8;
+      &:not(:last-child) {
+        margin-right: 10.4rem;
+      }
+      &-picture {
+        @extend %img-contain;
+        padding-bottom: 100%;
+        margin: 0 0 5.6rem;
+      }
+      &-text {
+      }
+    }
+    &-file-list {
+      --grid-gap: .8rem;
+      --grid-gap-: -.8rem;
+      margin-bottom: calc(var(--grid-gap-) * 2);
+    }
+    &-file-col {
+      margin-bottom: calc(var(--grid-gap) * 2);
+      &-file-card {
+        height: 100%;
+      }
+    }
+  }
+}

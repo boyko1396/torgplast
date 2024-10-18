@@ -1,0 +1,21 @@
+.goods-section {
+  padding: var(--offset-section-1) 0 var(--offset-section-1);
+  position: relative;
+  &__container {
+  }
+  &__header {
+    margin-bottom: var(--vr-1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__router {
+    flex-shrink: 0;
+    &-link {
+      font-size: var(--fs-4);
+    }
+  }
+}

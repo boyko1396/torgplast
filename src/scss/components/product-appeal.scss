@@ -1,0 +1,29 @@
+.product-appeal {
+  padding: var(--offset-section-3) 0 var(--offset-section-3);
+  position: relative;
+  &__container {
+  }
+  &__content {
+  }
+  &__title {
+    max-width: 108rem;
+    margin: 0;
+    color: rgba($coolGrayColor, .4);
+    div {
+      display: inline-block;
+      position: relative;
+      z-index: 0;
+      span {
+        width: 0;
+        height: 100%;
+        font: inherit;
+        color: $coolGrayColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
+      }
+    }
+  }
+}
